@@ -1,0 +1,30 @@
+.containerRick {
+    width: 20%;
+
+}
+
+.boxRick {
+    width: 100%;
+    border-radius: 10%;
+    border: 2px solid white;
+    background-color: gray;
+}
+
+.boxRick:hover {
+    background-color: cornflowerblue;
+}
+
+img {
+    border-radius: 10px;
+    margin: 10px;
+    border: 3px solid black;
+    box-shadow: 1px 1px 10px black;
+    box-sizing: border-box;
+
+}
+
+img:hover {
+    border-radius: 50%;
+    border: 3px solid greenyellow;
+    box-sizing: border-box;
+}

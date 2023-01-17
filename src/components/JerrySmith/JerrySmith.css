@@ -1,0 +1,15 @@
+.containerJerry {
+    width: 20%;
+
+}
+
+.boxJerry {
+    width: 100%;
+    border-radius: 10%;
+    border: 2px solid white;
+    background-color: gray;
+}
+
+.boxJerry:hover {
+    background-color: cornflowerblue;
+}

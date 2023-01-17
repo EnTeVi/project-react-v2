@@ -1,0 +1,14 @@
+.containerAlad {
+    width: 20%;
+}
+
+.boxAlad {
+    width: 100%;
+    border-radius: 10%;
+    border: 2px solid white;
+    background-color: gray;
+}
+
+.boxAlad:hover {
+    background-color: cornflowerblue;
+}

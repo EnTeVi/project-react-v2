@@ -1,0 +1,15 @@
+.containerBeth {
+    width: 20%;
+
+}
+
+.boxBeth {
+    width: 100%;
+    border-radius: 10%;
+    border: 2px solid white;
+    background-color: gray;
+}
+
+.boxBeth:hover {
+    background-color: cornflowerblue;
+}

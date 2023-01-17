@@ -1,0 +1,15 @@
+.containerSummer {
+    width: 20%;
+
+}
+
+.boxSummer {
+    width: 100%;
+    border-radius: 10%;
+    border: 2px solid white;
+    background-color: gray;
+}
+
+.boxSummer:hover {
+    background-color: cornflowerblue;
+}
