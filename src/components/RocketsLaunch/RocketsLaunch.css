@@ -1,0 +1,4 @@
+.container-rocket {
+    display: flex;
+    flex-wrap: wrap;
+}

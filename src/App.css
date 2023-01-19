@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #282c34;
 }
 
 .App-logo {
@@ -35,4 +36,31 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.header {
+  width: 100%;
+  height: 200px;
+  background-image: linear-gradient(to top, #ad0eda, #ab0edb, #a90edc, #a60fde, #a40fdf, #9b13df, #9217de, #881ade, #741fdb, #5d22d7, #4225d3, #1627cf);  margin-top: -200px;
+  position: fixed;
+}
+
+.header > h1 {
+  text-align: center;
+  line-height: 135px;
+  font-weight: bold;
+  font-size: 50px;
+  text-shadow: 2px 2px 50px blue;
+
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  background-image: linear-gradient(to right, #ad0eda, #ab0edb, #a90edc, #a60fde, #a40fdf, #9b13df, #9217de, #881ade, #741fdb, #5d22d7, #4225d3, #1627cf);
+  border: 2px solid black;
+  border-radius: 25px;
+  margin-left: 10%;
+  margin-top: 200px;
+  padding-top: 50px;
 }

@@ -1,0 +1,27 @@
+.block_rocket {
+    width: 20%;
+    height: 500px;
+    margin: 2.5%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 0 5px 5px purple;
+    background-color: #282c34;
+}
+
+.block_rocket:hover {
+    box-shadow: 1px 0 5px 5px royalblue;
+}
+
+.block_rocket > p {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 1px 1px 15px gold;
+    padding: 0 10px;
+}
+
+.block_rocket > img {
+    margin-top: 40px;
+    box-shadow: 3px 3px 5px 5px black;
+}
