@@ -27,3 +27,20 @@ button {
 button:active {
     background-color: #282c34;
 }
+
+
+@media screen and (min-width: 0) and (max-width: 1400px) {
+    .box-us{
+        width: 150px;
+        height: 150px;
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    button {
+        width: 80px;
+        height: 20px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+}

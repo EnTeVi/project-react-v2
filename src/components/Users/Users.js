@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 
+import {gorizontalScroll} from "../ScrollFunction/ScrollFunction";
 import {User} from "../User/User";
 import './Users.css';
 
@@ -12,20 +13,13 @@ const Users = () => {
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/users')
             .then(value => value.json())
-            .then(value => setUsers(value))
+            .then(value => setUsers(value));
+        gorizontalScroll();
     }, [])
 
     const liftUser = (id) => {
         setLiftUs(id);
     }
-
-    let mycustomscroll = document.querySelector('.box-user');
-    mycustomscroll.addEventListener("wheel", function(e){
-        e.stopPropagation();
-        let scroll = mycustomscroll.scrollLeft;
-        console.log(scroll);
-        mycustomscroll.scrollLeft = (scroll + e.deltaY);
-    });
 
     return (
         <div>

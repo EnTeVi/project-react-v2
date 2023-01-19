@@ -1,5 +1,3 @@
-import React from "react";
-
 import './User.css';
 
 const User = ({user, liftUser}) => {
@@ -20,7 +18,7 @@ const User = ({user, liftUser}) => {
                         <p>Website: {website}</p>
                     </div>
                 )
-            }}>Deteils</button>
+            }}>Details</button>
         </div>
     );
 };
