@@ -1,11 +1,12 @@
 import React, {useEffect, useState} from 'react';
+
 // import {posts} from "../DataBases/PostsUsersDB";
 import {Post} from "../Post/Post";
 import './Posts.css';
 
 const Posts = () => {
 
-    // 3. tast
+    // 3. task
     // let getPosts = [];
     // fetch('https://jsonplaceholder.typicode.com/posts')
     //     .then(value => value.json())
@@ -21,10 +22,8 @@ const Posts = () => {
     }, []);
 
     const liftPost = (id) => {
-        console.log(id);
         setLiftPost(id);
     }
-
 
     return (
         <div className='container-posts'>
@@ -39,7 +38,7 @@ const Posts = () => {
             {/*    {getPosts.map(post => <Post key={post.id} post={post}/>)}*/}
             {/*</div>*/}
 
-            <div className='deteils-post'>
+            <div className='details-post'>
                 {liftPost && (<div>{lift}</div>)}
             </div>
 

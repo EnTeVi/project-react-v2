@@ -1,15 +1,17 @@
 import React from "react";
 
 import './App.css';
+import {Posts} from "./components";
 // import {posts} from "./components/DataBases/PostsUsersDB";
-import {Posts} from "./components/Posts/Posts";
 
 function App() {
   return (
     <div className="App">
+
         <div className='header'>
             <h1>Posts of users</h1>
         </div>
+
         {/*1. task*/}
         {/*<div>*/}
         {/*    {posts.map(post =>*/}
@@ -20,7 +22,6 @@ function App() {
         {/*            <p>Body: {post.body}</p>*/}
         {/*        </div>)}*/}
         {/*</div>*/}
-
 
         <div className='container'>
             <Posts/>

@@ -7,6 +7,7 @@ const Post = ({post, liftPost}) => {
     // let click = () => {
     //     console.log('Click me');
     // }
+
     return (
         <div className='box-marking'>
 
@@ -26,7 +27,7 @@ const Post = ({post, liftPost}) => {
                         <p>Title: {title}</p>
                         <p>Body: {body}</p>
                     </div>);
-            }}>Deleils</button>
+            }}>Details</button>
 
         </div>
     );
