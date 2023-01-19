@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 // import {posts} from "../DataBases/PostsUsersDB";
 import {Post} from "../Post/Post";
+import './Posts.css';
 
 const Posts = () => {
 
@@ -26,7 +27,7 @@ const Posts = () => {
 
 
     return (
-        <div>
+        <div className='container-posts'>
 
             {/*2. task*/}
             {/*<div>*/}
@@ -38,9 +39,11 @@ const Posts = () => {
             {/*    {getPosts.map(post => <Post key={post.id} post={post}/>)}*/}
             {/*</div>*/}
 
-            {liftPost && (<div>{lift}</div>)}
+            <div className='deteils-post'>
+                {liftPost && (<div>{lift}</div>)}
+            </div>
 
-            <div>
+            <div className='block-post'>
                 {posts.map(post => <Post key={post.id} post={post} liftPost={liftPost}/>)}
             </div>
 

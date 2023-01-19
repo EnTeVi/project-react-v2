@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #282c34;
 }
 
 .App-logo {
@@ -35,4 +36,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(to bottom, #143eff, #7d2cea, #a717d3, #c200be, #d300a9, #d8009c, #dc008f, #de0d83, #db0d79, #d70f70, #d31267, #cf165f);  margin-top: -25px;
+}
+
+.header > h1 {
+  text-align: center;
+  line-height: 90px;
+  font-weight: bold;
+  font-size: 40px;
+  text-shadow: 2px 2px 5px white;
+  font-style: oblique;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  background-color: gray;
+  border: 1px solid black;
+  margin-left: 10%;
 }

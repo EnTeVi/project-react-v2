@@ -1,0 +1,21 @@
+.container-posts {
+    font-weight: bold;
+}
+
+.deteils-post {
+    width: 72%;
+    margin-left: 4%;
+    margin-top: 20px;
+    height: 200px;
+    background-color: #61dafb;
+    position: fixed;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 10px gold;
+    font-style: italic;
+}
+
+.block-post {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 250px;
+}

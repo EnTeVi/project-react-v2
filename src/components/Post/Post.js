@@ -1,3 +1,5 @@
+import './Post.css';
+
 const Post = ({post, liftPost}) => {
     let {userId, id, title, body} = post;
 
@@ -6,7 +8,8 @@ const Post = ({post, liftPost}) => {
     //     console.log('Click me');
     // }
     return (
-        <div>
+        <div className='box-marking'>
+
             <p>UserId: {userId}</p>
             <p>Id: {id}</p>
             <p>Title: {title}</p>
@@ -24,6 +27,7 @@ const Post = ({post, liftPost}) => {
                         <p>Body: {body}</p>
                     </div>);
             }}>Deleils</button>
+
         </div>
     );
 };

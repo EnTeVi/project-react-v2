@@ -7,7 +7,9 @@ import {Posts} from "./components/Posts/Posts";
 function App() {
   return (
     <div className="App">
-
+        <div className='header'>
+            <h1>Posts of users</h1>
+        </div>
         {/*1. task*/}
         {/*<div>*/}
         {/*    {posts.map(post =>*/}
@@ -19,7 +21,10 @@ function App() {
         {/*        </div>)}*/}
         {/*</div>*/}
 
-      <Posts/>
+
+        <div className='container'>
+            <Posts/>
+        </div>
 
     </div>
   );
