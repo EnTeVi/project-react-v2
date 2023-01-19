@@ -1,0 +1,29 @@
+.box-us {
+    border: 1px solid blue;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 10px blue;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.box-us:hover {
+    background-color: yellow;
+}
+
+button {
+    width: 75px;
+    height: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 1px 1px 5px 5px blue;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:active {
+    background-color: #282c34;
+}

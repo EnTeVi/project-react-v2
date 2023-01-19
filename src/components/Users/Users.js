@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 
 import {User} from "../User/User";
+import './Users.css';
 
 
 const Users = () => {
@@ -15,17 +16,24 @@ const Users = () => {
     }, [])
 
     const liftUser = (id) => {
-        // console.log(id);
         setLiftUs(id);
     }
 
+    let mycustomscroll = document.querySelector('.box-user');
+    mycustomscroll.addEventListener("wheel", function(e){
+        e.stopPropagation();
+        let scroll = mycustomscroll.scrollLeft;
+        console.log(scroll);
+        mycustomscroll.scrollLeft = (scroll + e.deltaY);
+    });
+
     return (
         <div>
-            <div>
+            <div className='liftInfo'>
                 {liftUser && (<div>{liftUs}</div>)}
             </div>
 
-            <div>
+            <div className='box-user'>
                 {users.map(user => <User key={user.id} user={user} liftUser={liftUser}/>)}
             </div>
         </div>

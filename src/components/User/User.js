@@ -1,8 +1,12 @@
+import React from "react";
+
+import './User.css';
+
 const User = ({user, liftUser}) => {
     let {id, name, email, phone, website} = user;
 
     return (
-        <div>
+        <div className='box-us'>
             <p>Id: {id}</p>
             <p>Name: {name}</p>
 
