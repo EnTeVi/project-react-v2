@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
-import {rocketService} from "../services/user.service";
+
 import {RocketMarking} from "../RocketMarking/RocketMarking";
+import {rocketService} from "../services/user.service";
 import './RocketsLaunch.css';
 
 const RocketsLaunch = () => {
@@ -9,7 +10,6 @@ const RocketsLaunch = () => {
     useEffect(() => {
         rocketService.getAll()
             .then(({data}) => setRockets(data))
-            // .then(value => setRockets(value.data));
     }, []);
 
     return (

@@ -50,8 +50,7 @@
   line-height: 135px;
   font-weight: bold;
   font-size: 50px;
-  text-shadow: 2px 2px 50px blue;
-
+  text-shadow: 2px 2px 10px blue;
 }
 
 .container {
@@ -63,4 +62,21 @@
   margin-left: 10%;
   margin-top: 200px;
   padding-top: 50px;
+}
+
+
+@media screen and (min-width: 100px) and (max-width: 1400px) {
+  .header {
+    height: 100px;
+    margin-top: -100px;
+  }
+
+  .header > h1 {
+    line-height: 50px;
+    font-size: 35px;
+  }
+
+  .container {
+    margin-top: 100px;
+  }
 }

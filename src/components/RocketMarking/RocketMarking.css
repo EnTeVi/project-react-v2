@@ -10,7 +10,7 @@
 }
 
 .block_rocket:hover {
-    box-shadow: 1px 0 5px 5px royalblue;
+    box-shadow: 1px 0 5px 15px royalblue;
 }
 
 .block_rocket > p {
@@ -22,6 +22,15 @@
 }
 
 .block_rocket > img {
+    width: 85%;
     margin-top: 40px;
     box-shadow: 3px 3px 5px 5px black;
+}
+
+
+@media screen and (min-width: 100px) and (max-width: 1400px) {
+    .block_rocket > img {
+        width: 80%;
+        margin-top: 100px;
+    }
 }
