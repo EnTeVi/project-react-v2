@@ -8,7 +8,7 @@ import './Users.css';
 const Users = () => {
 
     const [users, setUsers] = useState([]);
-    // const [liftUs, setLiftUs] = useState(null);
+    const [liftUs, setLiftUs] = useState([]);
 
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/users')
@@ -17,26 +17,18 @@ const Users = () => {
         gorizontalScroll();
     }, [])
 
-    // const liftUser = (id) => {
-    //     setLiftUs(id);
-    // }
-
-    // const superLift = () => {
-    //     return (liftUser && (<div>{liftUs}</div>))
-    // }
-
+    const liftUser = (id) => {
+        setLiftUs(id);
+    }
 
 
 
     return (
         <div>
-            {/*<div className='liftInfo'>*/}
-            {/*    {liftUser && (<div>{liftUs}</div>)}*/}
-            {/*</div>*/}
+
 
             <div className='box-user'>
-                {/*{users.map(user => <User key={user.id} user={user} liftUser={liftUser} superLift={superLift}/>)}*/}
-                {users.map(user => <User key={user.id} user={user}/>)}
+                {users.map(user => <User key={user.id} user={user} liftUser={liftUser} liftUs={liftUs}/>)}
             </div>
         </div>
     );

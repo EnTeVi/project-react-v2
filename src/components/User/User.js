@@ -1,33 +1,50 @@
 import './User.css';
 
-const User = ({user, liftUser, superLift}) => {
+const User = ({user, liftUser, liftUs}) => {
     let {id, name, email, phone, website} = user;
 
+
+    const but = () => {
+        return (
+            <button onClick={() => {
+                liftUser(
+                    <div>
+                        <p>Id: {id}</p>
+                        <p>Email: {email}</p>
+                        <p>Phone: {phone}</p>
+                        <p>Website: {website}</p>
+                    </div>
+                )
+            }}>Details
+            </button>)
+    }
+
+    const ready = () => {
+
+        if (user.id) {
+            return liftUs;
+        }
+    }
+
+    // створити новий стейт з юзефектом який слідкує за ід
 
 
     return (
         <div className='box-us'>
             <div>
-                <details className='details'>
-                    <summary><h3>Details</h3><p>Id: {id}</p><p>Name: {name}</p></summary>
-                    <p>Email: {email}</p>
-                    <p>Phone: {phone}</p>
-                    <p>Website: {website}</p>
-                </details>
+                <p>Id: {id}</p>
+                <p>Name: {name}</p>
 
-                {/*{  superLift ()  }*/}
+                {
+                    ready()
+                }
+
             </div>
 
-            {/*<button onClick={() => {*/}
-            {/*    liftUser(*/}
-            {/*        <div>*/}
-            {/*            <p>Email: {email}</p>*/}
-            {/*            <p>Phone: {phone}</p>*/}
-            {/*            <p>Website: {website}</p>*/}
-            {/*        </div>*/}
-            {/*    )*/}
-            {/*}}>Details*/}
-            {/*</button>*/}
+            {
+                but()
+            }
+
         </div>
     );
 };

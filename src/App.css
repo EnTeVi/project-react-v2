@@ -52,6 +52,11 @@
   line-height: 90px;
 }
 
+::-webkit-scrollbar { /* chrome based */
+  width: 0;  /* ширина scrollbar'a */
+  background: transparent;  /* опционально */
+}
+
 
 @media screen and (min-width: 0) and (max-width: 1400px) {
   .header {
