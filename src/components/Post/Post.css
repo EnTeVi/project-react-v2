@@ -1,0 +1,20 @@
+.boxPost {
+    border-bottom: 1px solid gold;
+    width: 50%;
+    margin-left: 25%;
+    text-align: start;
+}
+
+.boxPost p {
+    display: flex;
+}
+
+.blockName {
+    width: 20%;
+    border-right: 1px solid gold;
+}
+
+.blockTitle {
+    width: 80%;
+    margin-left: 30px;
+}

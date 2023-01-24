@@ -1,0 +1,30 @@
+.boxUser {
+    border: 1px solid gold;
+    width: 50%;
+    margin: 20px 0 20px 25%;
+    border-radius: 20px;
+}
+
+.boxUser button {
+    width: 150px;
+    height: 40px;
+    color: #faf762;
+    font-weight: bold;
+    background-color: #61dafb;
+    padding: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+.boxUser button:active {
+    background-color: gold;
+    color: #61dafb;
+    font-size: 20px;
+}
+
+.boxUser p {
+    font-size: 17px;
+    font-style: italic;
+}

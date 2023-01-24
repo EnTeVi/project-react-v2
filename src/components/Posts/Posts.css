@@ -1,0 +1,9 @@
+.postContainer {
+    width: 50%;
+    height: 700px;
+    margin-left: 50%;
+    margin-top: 150px;
+    position: fixed;
+    overflow: scroll;
+    border-radius: 5%;
+}
