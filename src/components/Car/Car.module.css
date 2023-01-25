@@ -1,0 +1,32 @@
+.boxCar {
+    width: 30%;
+    box-shadow: 0 5px 5px 5px #0d2a0d;
+    border-radius: 10px;
+    margin: 20px 0 10px 35% ;
+    padding: 10px 5px;
+}
+
+.boxCar p {
+    font-size: 15px;
+    font-style: italic;
+}
+
+.boxCar button {
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #282c34;
+    color: white;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.boxCar button:active {
+    background-color: white;
+    color: #282c34;
+}
+
+.but {
+    display: block;
+    width: 100%;
+}

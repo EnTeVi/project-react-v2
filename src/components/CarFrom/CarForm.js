@@ -1,8 +1,10 @@
 import React, {useEffect} from 'react';
 import {useForm} from "react-hook-form";
 import {joiResolver} from "@hookform/resolvers/joi";
+
 import {carValidator} from "../../validators";
 import {carService} from "../../services";
+import css from './CarForm.module.css';
 
 const CarForm = ({setCars, updateCar}) => {
     const {
@@ -32,8 +34,6 @@ const CarForm = ({setCars, updateCar}) => {
         reset();
     }
 
-
-
     const updateSubmit = async (car) => {
         const {data} = await carService.updateById(updateCar.id, car);
         if (Object.keys(data).length) {
@@ -42,14 +42,8 @@ const CarForm = ({setCars, updateCar}) => {
         }
     }
 
-    const deleteSubmit = async () => {
-        const {data} = await carService.deleteById()
-    }
-
-
-
     return (
-        <form onSubmit={handleSubmit(updateCar ? updateSubmit : submit)}>
+        <form className={css.form} onSubmit={handleSubmit(updateCar ? updateSubmit : submit)}>
             <input type="text" placeholder={'brand'} {...register('brand')}/>
             {errors.brand && <span>{errors.brand.message}</span>}
 

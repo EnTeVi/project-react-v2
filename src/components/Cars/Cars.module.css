@@ -1,0 +1,13 @@
+.carBlock {
+    width: 50%;
+    margin: 100px 0 20px 25%;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px black;
+    padding: 50px 0;
+}
+
+.carBlock:hover {
+    border: 3px solid white;
+    box-shadow: 0 0 5px 5px white;
+}
