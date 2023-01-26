@@ -1,11 +1,10 @@
-
-
+import css from './User.module.css';
 
 const User = ({user}) => {
     const {id, name, email} = user;
 
     return (
-        <div>
+        <div className={css.boxUser}>
             <div>
                 <p>Id: {id}</p>
                 <p>Name: {name}</p>

@@ -1,0 +1,33 @@
+.form {
+    width: 30%;
+    height: 350px;
+    border-top: 3px solid blue;
+    border-bottom: 3px dotted blue;
+    margin-left: 35%;
+    margin-top: 20px;
+}
+
+.form input {
+    display: block;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.form button {
+    margin: 30px 0 20px 0;
+    width: 20%;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #d00000;
+    color: azure;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.form button:active {
+    background-color: #023fb4;
+}

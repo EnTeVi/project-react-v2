@@ -1,0 +1,8 @@
+.blockUser {
+    width: 30%;
+    border-left: 3px solid blue;
+    border-right: 3px solid blue;
+    margin-left: 35%;
+    margin-top: 50px;
+}
+
