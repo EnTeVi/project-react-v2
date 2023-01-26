@@ -15,7 +15,7 @@ const Users = () => {
             .then(value => value.json())
             .then(value => setUsers(value));
         gorizontalScroll();
-    }, [])
+    }, [liftUs])
 
     const liftUser = (id) => {
         setLiftUs(id);

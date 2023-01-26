@@ -1,32 +1,41 @@
 import './User.css';
+import {useEffect, useState} from "react";
 
 const User = ({user, liftUser, liftUs}) => {
     let {id, name, email, phone, website} = user;
 
+    // const [noneInfo, setNoneInfo] = useState([]);
+
+    // useEffect(() => {
+    //     setNoneInfo(liftUs);
+    // }, [])
 
     const but = () => {
         return (
-            <button onClick={() => {
-                liftUser(
-                    <div>
-                        <p>Id: {id}</p>
-                        <p>Email: {email}</p>
+            liftUser(
+                <div>
+                    <div className='infoNone' id='infoNone'>
                         <p>Phone: {phone}</p>
                         <p>Website: {website}</p>
                     </div>
-                )
-            }}>Details
-            </button>)
+
+
+                </div>
+            )
+        )
+
     }
 
-    const ready = () => {
 
-        if (user.id) {
-            return liftUs;
+    function action() {
+        let added_item_button = document.getElementById('infoNone');
+        let actualDisplay = getComputedStyle(added_item_button).display;
+        if (actualDisplay === 'none') {
+            added_item_button.style.display = 'block';
+        } else {
+            added_item_button.innerHTML = but();
         }
     }
-
-    // створити новий стейт з юзефектом який слідкує за ід
 
 
     return (
@@ -34,19 +43,38 @@ const User = ({user, liftUser, liftUs}) => {
             <div>
                 <p>Id: {id}</p>
                 <p>Name: {name}</p>
-
-                {
-                    ready()
-                }
-
+                {/*{action}*/}
             </div>
 
-            {
-                but()
-            }
+
+
+            <button onClick={() => {
+                action()
+
+            }}>Details
+            </button>
+
+
+
 
         </div>
     );
 };
 
 export {User};
+
+
+//
+// <button onClick={() => {
+//     liftUser(
+//         <div>
+//             <div className='infoNone' id='infoNone'>
+//                 <p>Phone: {phone}</p>
+//                 <p>Website: {website}</p>
+//             </div>
+//
+//
+//         </div>
+//     )
+// }}>Details
+// </button>
