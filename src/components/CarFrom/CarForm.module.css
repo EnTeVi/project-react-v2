@@ -31,9 +31,16 @@
     color: white;
     font-weight: bold;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .form > button:active {
     background-color: white;
     color: #282c34;
+}
+
+.form span {
+    position: fixed;
+    font-size: 12px;
+    left: 45%;
 }

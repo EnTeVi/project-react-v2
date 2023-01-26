@@ -51,7 +51,7 @@ const CarForm = ({setCars, updateCar}) => {
             {errors.price && <span>{errors.price.message}</span>}
 
             <input type="text" placeholder={'year'} {...register('year')}/>
-            {errors.year && <span>{errors.year.message}</span>}
+            {errors.year && <span className={css.sp}>{errors.year.message}</span>}
 
             <button disabled={!isValid}>{updateCar?'Update':'Create'}</button>
         </form>
