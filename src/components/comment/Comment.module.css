@@ -1,0 +1,17 @@
+.boxComment {
+    width: 90%;
+    box-shadow: 0 50px 5px 5px #0d2a0d;
+    border-radius: 10px;
+    margin: 70px 0 10px 5% ;
+    padding: 10px 5px;
+    border-top: 1px solid #0d2a0d;
+}
+
+.boxComment p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+span {
+    border-bottom: 2px solid #0d2a0d;
+}

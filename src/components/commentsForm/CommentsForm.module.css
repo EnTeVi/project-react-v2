@@ -1,1 +1,41 @@
+.form {
+    width: 50%;
+    margin-left: 25%;
+    height: 350px;
+    display: block;
+    border-radius: 10px;
+    margin-top: -20px;
+    border: 3px solid red;
+    box-shadow: 0 0  10px 10px black;
+    padding-top: 20px;
+}
 
+.form > input {
+    display: block;
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.form > input:focus {
+    box-shadow: 0 0 5px 5px #0d2a0d;
+}
+
+.form button {
+    margin: 50px 0;
+    width: 20%;
+    height: 30px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.form button:active {
+    background-color: red;
+    color: black;
+}
