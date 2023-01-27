@@ -8,6 +8,7 @@ const Albums = () => {
     useEffect(() => {
         albumsService.getAll().then(({data}) => setAlbums([...data]));
     }, []);
+    console.log(albums)
 
     return (
         <div>

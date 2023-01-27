@@ -1,10 +1,10 @@
-const baseURL = 'jsonplaceholder.typicode.com';
+const baseURL = 'https://jsonplaceholder.typicode.com';
 
 const urls = {
     albums: '/albums',
     comments: '/comments',
-    posts: '/posts',
-    togos: '/togos'
+    posts: (id) => `/posts/${id}`,
+    todos: '/todos'
 }
 
 export {

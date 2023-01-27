@@ -1,14 +1,14 @@
 import React from 'react';
-import {Header} from "../../components";
 import {Outlet} from "react-router-dom";
+import {Comments} from "../../components";
 
-const MainLayout = () => {
+const CommentsPage = () => {
     return (
         <div>
-            <Header/>
             <Outlet/>
+            <Comments/>
         </div>
     );
 };
 
-export {MainLayout};
+export {CommentsPage};

@@ -5,5 +5,5 @@ export * from './Comments/Comments';
 export * from './Header/Header';
 export * from './Post/Post';
 export * from './Posts/Posts';
-export * from './Togo/Togo';
-export * from './Togos/Togos';
+export * from './Todo/Todo';
+export * from './Todos/Todos';
