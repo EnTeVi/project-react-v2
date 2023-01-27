@@ -1,7 +1,7 @@
 import './User.css';
 import {useEffect, useState} from "react";
 
-const User = ({user, liftUser, liftUs}) => {
+const User = ({user}) => {
     let {id, name, email, phone, website} = user;
 
     // const [noneInfo, setNoneInfo] = useState([]);
@@ -10,22 +10,26 @@ const User = ({user, liftUser, liftUs}) => {
     //     setNoneInfo(liftUs);
     // }, [])
 
-    const but = () => {
-        return (
-            liftUser(
-                <div>
-                    <div className='infoNone' id='infoNone'>
-                        <p>Phone: {phone}</p>
-                        <p>Website: {website}</p>
-                    </div>
+    // const but = () => {
+    //     return (
+    //         liftUser(
+    //             <div>
+    //                 <div className='infoNone' id='infoNone'>
+    //                     <p>Phone: {phone}</p>
+    //                     <p>Website: {website}</p>
+    //                 </div>
+    //
+    //
+    //             </div>
+    //         )
+    //     )
+    //
+    // }
 
 
-                </div>
-            )
-        )
-
-    }
-
+// else {
+//         added_item_button.innerHTML = action;
+//     }
 
     function action() {
         let added_item_button = document.getElementById('infoNone');
@@ -33,7 +37,7 @@ const User = ({user, liftUser, liftUs}) => {
         if (actualDisplay === 'none') {
             added_item_button.style.display = 'block';
         } else {
-            added_item_button.innerHTML = but();
+            added_item_button.style.display = 'none';
         }
     }
 
@@ -43,15 +47,22 @@ const User = ({user, liftUser, liftUs}) => {
             <div>
                 <p>Id: {id}</p>
                 <p>Name: {name}</p>
-                {/*{action}*/}
+            </div>
+
+            <div className='infoNone' id='infoNone'>
+                <p>Phone: {phone}</p>
+                <p>Website: {website}</p>
             </div>
 
 
 
-            <button onClick={() => {
+
+            <button onClick={() =>
                 action()
 
-            }}>Details
+
+
+            }>Details
             </button>
 
 
