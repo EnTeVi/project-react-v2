@@ -57,8 +57,12 @@ const User = ({user}) => {
 
 
 
-            <button onClick={() =>
-                action()
+            <button onClick={() => {
+                if (user.id  ) {
+
+                    action()
+                }
+            }
 
 
 
