@@ -1,46 +1,29 @@
 import './User.css';
-import {useEffect, useState} from "react";
+import {useNavigate} from "react-router-dom";
 
-const User = ({user}) => {
-    let {id, name, email, phone, website} = user;
+const User = ({user, one}) => {
+    let {id, name} = user;
 
-    // const [noneInfo, setNoneInfo] = useState([]);
+    let navigate = useNavigate();
 
-    // useEffect(() => {
-    //     setNoneInfo(liftUs);
-    // }, [])
-
-    // const but = () => {
-    //     return (
-    //         liftUser(
-    //             <div>
-    //                 <div className='infoNone' id='infoNone'>
-    //                     <p>Phone: {phone}</p>
-    //                     <p>Website: {website}</p>
-    //                 </div>
-    //
-    //
-    //             </div>
-    //         )
-    //     )
-    //
+    // function action() {
+    //     let added_item_button = document.getElementById('infoNone');
+    //     let actualDisplay = getComputedStyle(added_item_button).display;
+    //     if (actualDisplay === 'none') {
+    //         added_item_button.style.display = 'block';
+    //     } else {
+    //         added_item_button.style.display = 'none';
+    //     }
     // }
 
-
-// else {
-//         added_item_button.innerHTML = action;
-//     }
-
-    function action() {
-        let added_item_button = document.getElementById('infoNone');
-        let actualDisplay = getComputedStyle(added_item_button).display;
-        if (actualDisplay === 'none') {
-            added_item_button.style.display = 'block';
+    const showHide = () => {
+        let idPost = document.getElementById('infoNone');
+        if (idPost.style.display === 'none'){
+            idPost.style.display = 'block';
         } else {
-            added_item_button.style.display = 'none';
+            idPost.style.display = 'none';
         }
     }
-
 
     return (
         <div className='box-us'>
@@ -49,25 +32,15 @@ const User = ({user}) => {
                 <p>Name: {name}</p>
             </div>
 
-            <div className='infoNone' id='infoNone'>
-                <p>Phone: {phone}</p>
-                <p>Website: {website}</p>
-            </div>
 
+            <div>{one}</div>
 
 
 
             <button onClick={() => {
-                if (user.id  ) {
-
-                    action()
-                }
-            }
-
-
-
-            }>Details
-            </button>
+                navigate(id.toString());
+                showHide();
+            }}>Details</button>
 
 
 
