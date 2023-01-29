@@ -3,7 +3,7 @@ const baseURL = 'https://jsonplaceholder.typicode.com';
 const urls = {
     albums: '/albums',
     comments: '/comments',
-    posts: (id) => `/posts/${id}`,
+    posts: '/posts',
     todos: '/todos'
 }
 

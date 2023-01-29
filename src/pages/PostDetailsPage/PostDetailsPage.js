@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react';
-import {postsService} from "../../services";
 import {useParams} from "react-router-dom";
+
+import {postsService} from "../../services";
+import css from './PostDetailsPage.module.css';
 
 const PostDetailsPage = () => {
     const {postId} = useParams();
@@ -8,32 +10,31 @@ const PostDetailsPage = () => {
 
     useEffect(() => {
         if (postId) {
-
         postsService.getById(postId).then(({data}) => setPost(data))
         }
     }, [postId])
 
-
     const {userId, id, title, body} = post;
 
     if (!post) return null;
+
     return (
-        <div>
-            <div>
-                <p>UserId: </p>
-                <p>{userId}</p>
+        <div className={css.boxPost} id='postDetails'>
+            <div className={css.postParams}>
+                <p className='boxLeft'>UserId: </p>
+                <p className='boxRight'>{userId}</p>
             </div>
-            <div>
-                <p>Id: </p>
-                <p>{id}</p>
+            <div className={css.postParams}>
+                <p className='boxLeft'>Id: </p>
+                <p className='boxRight'>{id}</p>
             </div>
-            <div>
-                <p>Title: </p>
-                <p>{title}</p>
+            <div className={css.postParams}>
+                <p className='boxLeft'>Title: </p>
+                <p className='boxRight'>{title}</p>
             </div>
-            <div>
-                <p>Body: </p>
-                <p>{body}</p>
+            <div className={css.postParams} >
+                <p className='boxLeft'>Body: </p>
+                <p className='boxRight'>{body}</p>
             </div>
         </div>
     );

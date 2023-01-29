@@ -1,11 +1,13 @@
-import React from 'react';
+import {Outlet, useNavigate} from "react-router-dom";
+
 import {Header} from "../../components";
-import {Outlet} from "react-router-dom";
 
 const MainLayout = () => {
+    const navigate = useNavigate();
+
     return (
         <div>
-            <Header/>
+            <Header navigate={navigate}/>
             <Outlet/>
         </div>
     );

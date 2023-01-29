@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+
 import {albumsService} from "../../services";
 import {Album} from "../Album/Album";
 
@@ -8,7 +9,6 @@ const Albums = () => {
     useEffect(() => {
         albumsService.getAll().then(({data}) => setAlbums([...data]));
     }, []);
-    console.log(albums)
 
     return (
         <div>

@@ -1,9 +1,9 @@
-import React from 'react';
+import css from './HomePage.module.css';
 
 const HomePage = () => {
     return (
-        <div>
-            <h1>fsdsdfds</h1>
+        <div className={css.container}>
+            <img src="https://janarosmonaliev.com/assets/github-home.png" alt="home"/>
         </div>
     );
 };

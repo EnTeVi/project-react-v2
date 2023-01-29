@@ -1,3 +1,12 @@
+.header {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    position: fixed;
+    margin-top: -150px;
+    border-bottom: 3px solid green;
+}
+
 .header a {
     text-decoration: none;
     color: white;
@@ -8,13 +17,29 @@
 .header a[class='active'] {
     color: green;
     font-size: 22px;
-    text-shadow: 0 5px 4px white;
+    text-shadow: 1px 10px 5px green;
     font-weight: bold;
 }
 
-.header {
-    width: 100%;
-    height: 50px;
-    background-color: gray;
 
+.but {
+    width: 20%;
+    margin: 5px 0 5px 40%;
+}
+
+.but button {
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    margin: 0 10px;
+    border: 2px solid green;
+    cursor: pointer;
+    background-color: white;
+    color: #282c34;
+    font-weight: bold;
+}
+
+.but button:active {
+    background-color: #282c34;
+    color: white;
 }

@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+
 import {todosService} from "../../services";
 import {Todo} from "../Todo/Todo";
 
@@ -8,7 +9,6 @@ const Todos = () => {
     useEffect(() => {
         todosService.getAll().then(({data}) => setTodos([...data]));
     }, []);
-    console.log(todos)
 
     return (
         <div>
