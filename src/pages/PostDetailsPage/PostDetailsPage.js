@@ -14,6 +14,10 @@ const PostDetailsPage = () => {
         }
     }, [postId])
 
+    const bigword = (arg) => {
+        return arg[0].toUpperCase() + arg.slice(1) + '.';
+    }
+
     const {userId, id, title, body} = post;
 
     if (!post) return null;
@@ -30,11 +34,11 @@ const PostDetailsPage = () => {
             </div>
             <div className={css.postParams}>
                 <p className='boxLeft'>Title: </p>
-                <p className='boxRight'>{title}</p>
+                <p className='boxRight'>{bigword(title)}</p>
             </div>
             <div className={css.postParams} >
                 <p className='boxLeft'>Body: </p>
-                <p className='boxRight'>{body}</p>
+                <p className='boxRight'>{bigword(body)}</p>
             </div>
         </div>
     );
