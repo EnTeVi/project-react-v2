@@ -11,7 +11,7 @@ const User = ({user, setUpdateUser, setUsers}) => {
     const navigate = useNavigate();
 
     return (
-        <div>
+        <div className='blockComponents'>
             <div>
                 <div>
                     <p>Id: </p>

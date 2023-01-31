@@ -1,4 +1,4 @@
-import {Route, Routes} from "react-router-dom";
+import {Navigate, Route, Routes} from "react-router-dom";
 
 import './App.css';
 import {LinkRoutes} from "./routes/link.routes";
@@ -17,7 +17,8 @@ function App() {
   return (
     <Routes>
       <Route path={LinkRoutes.index} element={<MainLayout/>}>
-          <Route index element={<HomePage/>}/>
+          <Route index element={<Navigate to={LinkRoutes.home}/>}/>
+          <Route path={LinkRoutes.home} element={<HomePage/>}/>
           <Route path={LinkRoutes.albums} element={<AlbumsPage/>}/>
           <Route path={LinkRoutes.users} element={<UsersPage/>}>
               <Route path={LinkRoutes.userId} element={<UserDetailsPage/>}/>

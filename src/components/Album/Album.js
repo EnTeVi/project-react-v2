@@ -6,7 +6,7 @@ const Album = ({album}) => {
     }
 
     return (
-        <div>
+        <div className='blockComponents'>
             <div>
                 <p>UserId: </p>
                 <p>{userId}</p>

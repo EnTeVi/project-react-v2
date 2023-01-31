@@ -1,7 +1,14 @@
+import {useContext} from "react";
+import {MyContext} from "../../index";
+
 const AboutPage = () => {
+    const context = useContext(MyContext);
+
  return (
   <div>
-   AboutPage
+    {/*<p>Name: {context.name}</p>*/}
+    {/*<p>Age: {context.age}</p>*/}
+      {JSON.stringify(context)}
   </div>
  );
 };

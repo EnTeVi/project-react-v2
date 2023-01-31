@@ -10,7 +10,7 @@ const Todos = () => {
     }, []);
 
     return (
-        <div>
+        <div className='contain'>
             {
                 todos.map(todo => <Todo key={todo.id} todo={todo}/>)
             }

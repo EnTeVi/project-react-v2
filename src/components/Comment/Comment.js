@@ -10,7 +10,7 @@ const Comment = ({comment}) => {
     let commentNavigate = useNavigate();
 
     return (
-        <div>
+        <div className='blockComponents'>
             <div>
                 <p>PostId: </p>
                 <p>{postId}</p>
