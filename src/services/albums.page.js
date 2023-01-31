@@ -6,5 +6,5 @@ const albumsService = {
 };
 
 export {
-    axiosService
+    albumsService
 };

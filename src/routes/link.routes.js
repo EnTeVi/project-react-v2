@@ -1,9 +1,14 @@
 const LinkRoutes = {
-    albums: '/albums',
-    users: '/users',
-    comments: '/comments',
-    togos: '/togos',
-    post: ':id'
+    index: '/',
+    home: 'home',
+    about: 'about',
+    albums: 'albums',
+    users: 'users',
+    userId: ':userId',
+    comments: 'comments',
+    todos: 'todos',
+    post: ':postId',
+    notFound: '*'
 }
 
 export {

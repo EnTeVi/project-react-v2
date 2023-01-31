@@ -4,7 +4,8 @@ export * from './Comment/Comment';
 export * from './Comments/Comments';
 export * from './Header/Header';
 export * from './SiteBar/SiteBar'
-export * from './Togo/Togo';
-export * from './Togos/Togos';
+export * from './Todo/Todo';
+export * from './Todos/Todos';
 export * from './User/User';
 export * from './Users/Users';
+export * from './UserDetails/UserDetails'
