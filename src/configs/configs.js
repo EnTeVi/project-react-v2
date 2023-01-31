@@ -4,7 +4,7 @@ const urls = {
     albums: '/albums',
     users: '/users',
     comments: '/comments',
-    post: '/posts/id',
+    post: '/posts',
     todos: '/todos'
 };
 

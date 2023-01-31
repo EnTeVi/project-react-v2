@@ -1,10 +1,10 @@
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import {usersService} from "../../services";
 
 const UserDetails = ({userId, state}) => {
     const [user, setUser] = useState([]);
 
-    useEffect(() => {
+    useEffect((state) => {
         if (state) {
             setUser({...state});
         } else {
