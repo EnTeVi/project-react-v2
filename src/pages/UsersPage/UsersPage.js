@@ -2,6 +2,7 @@ import {UserForm, Users} from "../../components";
 import {Outlet} from "react-router-dom";
 import {useEffect, useState} from "react";
 import {usersService} from "../../services";
+import css from './UsersPage.module.css';
 
 const UsersPage = () => {
     const [users, setUsers] = useState([]);
@@ -12,7 +13,7 @@ const UsersPage = () => {
     }, []);
 
     return (
-        <div>
+        <div className={css.container}>
             <UserForm setUsers={setUsers} updateUser={updateUser}/>
             <Outlet/>
             <Users users={users} setUpdateUser={setUpdateUser} setUsers={setUsers}/>

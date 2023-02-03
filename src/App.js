@@ -7,11 +7,12 @@ import {
     AboutPage,
     AlbumsPage,
     CommentsPage,
-    HomePage, NotFoundPage,
+    HomePage, LoginPage, NotFoundPage,
     PostOfCommentsPage,
     TodosPage, UserDetailsPage,
     UsersPage
 } from "./pages";
+import {RequireAuth} from "./hoc";
 
 function App() {
   return (
@@ -20,7 +21,11 @@ function App() {
           <Route index element={<Navigate to={LinkRoutes.home}/>}/>
           <Route path={LinkRoutes.home} element={<HomePage/>}/>
           <Route path={LinkRoutes.albums} element={<AlbumsPage/>}/>
-          <Route path={LinkRoutes.users} element={<UsersPage/>}>
+          <Route path={LinkRoutes.users} element={
+              <RequireAuth>
+                <UsersPage/>
+              </RequireAuth>
+          }>
               <Route path={LinkRoutes.userId} element={<UserDetailsPage/>}/>
           </Route>
           <Route path={LinkRoutes.comments} element={<CommentsPage/>}>
@@ -28,6 +33,7 @@ function App() {
           </Route>
           <Route path={LinkRoutes.todos} element={<TodosPage/>}/>
           <Route path={LinkRoutes.about} element={<AboutPage/>}/>
+          <Route path={LinkRoutes.login} element={<LoginPage/>}/>
           <Route path={LinkRoutes.notFound} element={<NotFoundPage/>}/>
       </Route>
     </Routes>

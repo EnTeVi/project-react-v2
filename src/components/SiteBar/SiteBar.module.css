@@ -1,0 +1,33 @@
+.boxSiteBar {
+    width: 10%;
+    height: 100vh;
+    position: fixed;
+    display: block;
+    background-image: linear-gradient(to bottom, #ff0000, #f0220f, #e1301a, #d13922, #c24029, #ae3b2d, #99372f, #843330, #63272b, #431d22, #251317, #000000);    /*margin-top: -100px;*/
+    padding-top: 100px;
+    margin-top: 78px;
+}
+
+.boxSiteBar a[class='active'] {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    opacity: .5;
+    box-shadow: 2px 2px 5px 0 black;
+}
+
+.boxSiteBar a {
+    text-decoration: none;
+}
+
+.boxSiteBar a {
+    display: block;
+    width: 80%;
+    margin: 20px 10%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: "Arno Pro Display", sans-serif;
+    border-top: 1px solid black;
+    padding-top: 15px;
+}

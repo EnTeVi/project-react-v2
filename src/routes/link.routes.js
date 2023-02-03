@@ -8,6 +8,7 @@ const LinkRoutes = {
     comments: 'comments',
     todos: 'todos',
     post: ':postId',
+    login: 'login',
     notFound: '*'
 }
 

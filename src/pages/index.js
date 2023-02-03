@@ -7,3 +7,4 @@ export * from './PostOfCommentsPage/PostOfCommentsPage';
 export * from './TodosPage/TodosPage';
 export * from './UserDetailsPage/UserDetailsPage';
 export * from './UsersPage/UsersPage';
+export * from './LoginPage/LoginPage';
