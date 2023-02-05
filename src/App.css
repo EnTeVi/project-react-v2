@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+.pageBox {
+  width: 30%;
+  display: block;
+  text-align: center;
+  margin: 200px 0 0 40%;
+}
+
+body {
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}

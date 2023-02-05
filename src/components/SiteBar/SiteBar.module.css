@@ -1,0 +1,25 @@
+.siteBar {
+    width: 10%;
+    height: 100vh;
+    margin-top: 100px;
+    position: fixed;
+    text-align: center;
+    background-color: #d9d9d9;
+}
+
+.siteBar a{
+    text-decoration: none;
+}
+
+.siteBar a{
+    margin: 20px 0 20px 10%;
+    color: #282c34;
+    display: block;
+    font-size: 20px;
+    width: 80%;
+}
+
+.siteBar a[class='active'] {
+    background-color: #61dafb;
+    box-shadow: 1px 1px 10px 1px black;
+}
