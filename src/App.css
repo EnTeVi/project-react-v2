@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  width: 30%;
+  display: flex;
+  margin-left: 30%;
+  margin-top: 50px;
+}
+
+.b1 {
+  display: block;
+  text-align: center;
+  margin-left: 30%;
+  width: 30%;
+}
+
+.container button {
+  background-color: aqua;
+  transition: 1s;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 2px 5px 5px black;
+  margin: 5px;
+  user-select: none;
+}
+
+.container button:hover {
+  transform: perspective(100px) scaleY(0.5) rotateY(45deg);
+  background-color: #b6ffff;
+  transition: 1s;
+}
+
