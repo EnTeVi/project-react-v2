@@ -13,9 +13,9 @@ const AboutPage = () => {
     // console.log(inp);
         // let numb = inp.value
         // console.log(numb);
-
-    let input = document.querySelector('input');
-    console.log(input.value);
+    //
+    // let input = document.querySelector('input');
+    // console.log(input.value);
 
     // const addPlus = (inp) => {
         // let x = '+';
@@ -35,10 +35,10 @@ const AboutPage = () => {
             {/*<p>Name: {context.name}</p>*/}
             {/*<p>Age: {context.age}</p>*/}
             {JSON.stringify(context)}
-            <div>
-                <input type="number" placeholder={'0'}/>
-                <button>push</button>
-            </div>
+            {/*<div>*/}
+            {/*    <input type="number" placeholder={'0'}/>*/}
+            {/*    <button>push</button>*/}
+            {/*</div>*/}
             {/*<div>*/}
             {/*    <input type="button" placeholder={'+'} onClick={() => addPlus()}/>*/}
             {/*</div>*/}
