@@ -1,12 +1,21 @@
-import './App.css';
-import {Header, Users} from "./components";
+import React from 'react'
+import {Navigate, Route, BrowserRouter, Routes} from "react-router-dom";
 
-function App() {
+import './App.css';
+import {Posts, Users} from "./components";
+import {MainLayouts} from "./layouts";
+
+const App = () => {
     return (
-        <div className="App">
-            <Header/>
-            <Users/>
-        </div>
+        <BrowserRouter>
+            <Routes>
+                <Route path={'/'} element={<MainLayouts/>}>
+                    <Route index element={<Navigate to={'users'}/>}/>
+                    <Route path={'users'} element={<Users/>}/>
+                    <Route path={'posts'} element={<Posts/>}/>
+                </Route>
+            </Routes>
+        </BrowserRouter>
     );
 }
 

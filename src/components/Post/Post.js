@@ -1,30 +1,30 @@
 import {useDispatch} from "react-redux";
 
-import {userAction} from "../../redux";
+import {postsAction} from "../../redux";
 
-const User = ({user}) => {
-    const {id, name, username} = user;
+const Post = ({post}) => {
+    const {id, title, body} = post;
     const dispatch = useDispatch();
 
     return (
         <div>
             <p>{id}</p>
-            <p>{name}</p>
-            <p>{username}</p>
+            <p>{title}</p>
+            <p>{body}</p>
 
             <button onClick={() => {
-                dispatch(userAction.setSelectedUser(user))
+                dispatch(postsAction.setSelectedPosts(post))
             }}>
                 Select
             </button>
 
             <button onClick={() =>
-                dispatch(userAction.getById({id}))
+                dispatch(postsAction.getById({id}))
             }>
-                apiSelect
+                API Select
             </button>
         </div>
     );
 };
 
-export {User};
+export {Post};
