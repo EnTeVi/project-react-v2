@@ -12,6 +12,8 @@ const Header = () => {
                 {
                     selectedUser && selectedUser.name
                 }
+            </p>
+            <p>
                 {
                     selectedPost && selectedPost.title
                 }
