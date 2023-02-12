@@ -82,6 +82,12 @@ a {
   cursor: pointer;
 }
 
+a[class='active'] {
+  color: #ffffff;
+  box-shadow: 0 0 3px 5px #ffffff;
+  background-color: black;
+}
+
 a:hover {
   color: #ffffff;
   box-shadow: 0 0 3px 5px #ffffff;
