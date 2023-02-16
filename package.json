@@ -1,0 +1,23 @@
+{
+  "name": "project-react-v2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnTeVi/project-react-v2.git"
+  },
+  "dependencies": {
+    "typescript": "^4.9.5"
+  },
+  "author": "EnTeVi <andriy.lytvynchuk@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EnTeVi/project-react-v2/issues"
+  },
+  "homepage": "https://github.com/EnTeVi/project-react-v2#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "description": ""
+}
